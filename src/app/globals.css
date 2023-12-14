@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: 'Cygro';
+    src: url('../../public/fonts/Cygre-Black.ttf');
+    src: url('../../public/fonts/Cygre-Bold.ttf');
+    src: url('../../public/fonts/Cygre-Book.ttf');
+    src: url('../../public/fonts/Cygre-ExtraBold.ttf');
+    src: url('../../public/fonts/Cygre-Light.ttf');
+    src: url('../../public/fonts/Cygre-Medium.ttf');
+    src: url('../../public/fonts/Cygre-Regular.ttf');
+    src: url('../../public/fonts/Cygre-semibold.ttf');
+    src: url('../../public/fonts/Cygre-Thin.ttf');
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #2388FF;
 }
